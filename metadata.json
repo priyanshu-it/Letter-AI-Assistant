@@ -1,0 +1,6 @@
+{
+  "name": "Letter and Email Writer",
+  "description": "An expert assistant that gathers specific details to draft highly personalized, professional letters or emails, with full support for bilingual translation (English and Hindi), copy controls, and a developer code viewer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
