@@ -100,7 +100,7 @@ export function SidebarContent({
                 3
               </div>
               <div>
-                <span className={`text-[11px] font-medium block ${step >= 3 ? "text-slate-200" : "text-slate-500"}`}>Bilingual Draft</span>
+                <span className={`text-[11px] font-medium block ${step >= 3 ? "text-slate-200" : "text-slate-500"}`}>Letter Draft</span>
                 <span className="text-[9px] text-slate-500 block leading-tight">Review, copy & edit</span>
               </div>
             </div>
