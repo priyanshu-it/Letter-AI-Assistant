@@ -1,5 +1,5 @@
 import type { ChangeEvent, Dispatch, SetStateAction } from "react";
-import { Check, Copy, Eye, FileText, Pencil } from "lucide-react";
+import { Check, Copy, Eye, FileText, Mail, Pencil } from "lucide-react";
 import { Correspondence } from "../types";
 
 interface OutputPanelProps {
@@ -33,6 +33,13 @@ export function OutputPanel({
     document.body.appendChild(element);
     element.click();
     document.body.removeChild(element);
+  };
+
+  const handleSendEmail = () => {
+    if (!draftResult) return;
+    const text = activeLang === "english" ? draftResult.english : draftResult.hindi;
+    const mailtoLink = `mailto:?body=${encodeURIComponent(text)}`;
+    window.location.href = mailtoLink;
   };
 
   if (!draftResult) {
@@ -148,13 +155,23 @@ export function OutputPanel({
 
       <div className="mt-4 pt-3 border-t border-slate-100 flex justify-between items-center text-[10px] text-slate-400">
         <span>Verification suggested before dispatch.</span>
-        <button
-          onClick={downloadDraft}
-          className="flex items-center space-x-1 hover:text-slate-900 font-semibold cursor-pointer"
-        >
-          <FileText className="w-3.5 h-3.5 text-indigo-600" />
-          <span>Download TXT</span>
-        </button>
+        <div className="flex items-center space-x-3">
+          <button
+            onClick={handleSendEmail}
+            className="flex items-center space-x-1 hover:text-slate-900 font-semibold cursor-pointer"
+          >
+            <Mail className="w-3.5 h-3.5 text-indigo-900" />
+            <span>Send Email</span>
+          </button>
+
+          {/* <button
+            onClick={downloadDraft}
+            className="flex items-center space-x-1 hover:text-slate-900 font-semibold cursor-pointer"
+          >
+            <FileText className="w-3.5 h-3.5 text-indigo-900" />
+            <span>Download TXT</span>
+          </button> */}
+        </div>
       </div>
     </div>
   );
