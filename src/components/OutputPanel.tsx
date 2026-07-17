@@ -72,7 +72,7 @@ export function OutputPanel({
     <div className="bg-white rounded-xl border border-slate-200 shadow-xs p-6">
       <div className="flex flex-col sm:flex-row justify-between sm:items-center border-b border-slate-100 pb-4 mb-4 gap-3">
         <div>
-          <span className="bg-emerald-50 text-emerald-700 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider font-mono">Bilingual Output</span>
+          <span className="bg-emerald-50 text-emerald-700 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider font-mono">Letter Output</span>
           <h3 className="text-base font-bold text-slate-900 font-display mt-1">Rendered Correspondence</h3>
         </div>
 
