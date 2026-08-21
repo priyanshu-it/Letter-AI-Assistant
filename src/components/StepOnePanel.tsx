@@ -25,7 +25,7 @@ export function StepOnePanel({
       <div className="mb-6">
         <span className="bg-indigo-50 text-indigo-700 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider font-mono">Step 1 of 3</span>
         <h3 className="text-base font-bold text-slate-900 font-display mt-2">What kind of correspondence do you need?</h3>
-        <p className="text-xs text-slate-500 mt-1">Select an optimized preset or input a custom description of the letter/email you wish to draft.</p>
+        <p className="text-xs text-slate-500 mt-1">Enter a custom description of the letter/email you wish to draft.</p>
       </div>
 
       {/* <div className="hidden sm:grid grid-cols-3 gap-3 mb-6">
