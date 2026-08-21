@@ -28,7 +28,7 @@ export function StepOnePanel({
         <p className="text-xs text-slate-500 mt-1">Select an optimized preset or input a custom description of the letter/email you wish to draft.</p>
       </div>
 
-      <div className="hidden sm:grid grid-cols-3 gap-3 mb-6">
+      {/* <div className="hidden sm:grid grid-cols-3 gap-3 mb-6">
         {PRESET_TOPICS.map((preset) => (
           <button
             key={preset.id}
@@ -51,7 +51,9 @@ export function StepOnePanel({
           </button>
         ))}
       </div>
-      <div className="hidden sm:block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-2 px-2">OR</div>
+      <div className="hidden sm:block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-2 px-2">OR</div> 
+      */}
+      
       <form onSubmit={handleAnalyzeRequirements} className="space-y-4 border-t border-slate-100 pt-5">
         <div>
           <label htmlFor="input-topic" className="block text-xs font-bold text-slate-800 mb-2">
