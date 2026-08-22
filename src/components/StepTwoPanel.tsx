@@ -13,7 +13,7 @@ interface StepTwoPanelProps {
   setStep: Dispatch<SetStateAction<1 | 2 | 3>>;
 }
 
-const toneOptions = ["Professional", "Friendly", "Formal", "Persuasive", "Warm"];
+const toneOptions = ["Formal", "Professional", "Friendly", "Persuasive", "Warm"];
 
 export function StepTwoPanel({
   questions,
